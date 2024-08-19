@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Tentativa } from '../shared/tentativa.model';
 
 @Component({
   selector: 'app-tentativas',
@@ -10,4 +11,12 @@ import { Component } from '@angular/core';
 export class TentativasComponent {
   public coracaoVazio: string = "/assets/coracao_vazio.png"
   public coracaoCheio: string = "/assets/coracao_cheio.png"
+
+  public tentativas: Tentativa[] = [
+    new Tentativa(true),
+    new Tentativa(true),
+    new Tentativa(true)
+  ]
+
+  constructor(){}
 }
