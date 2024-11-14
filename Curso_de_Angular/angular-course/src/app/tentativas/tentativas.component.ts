@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Tentativa } from '../shared/tentativa.model';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-tentativas',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './tentativas.component.html',
   styleUrl: './tentativas.component.css'
 })
